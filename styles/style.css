@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+}
+.iconProfile img{
+    width: 4vw;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    padding: 1%;
+    cursor: pointer;
+    position: relative;
+}
+
+.links a:after {
+    display: block;
+    content: "";
+    background-color: #ffffff;
+    height: 5px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: width .5s ease-in-out;
+    -moz--transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.links a:hover:after,
+.links a:focus:after {
+    width: 100%;
+}
+
+
+.siteTitle{
+    color: white;
+    width: 50%;
+    font-size: 2.2vw;
+    display: flex;
+    text-decoration: none;
+    margin-right: 15%;
+}
+.studentName{
+    color: white;
+    font-size: 1.5vw;
+    width: 75%;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+.rightInfo{
+    width: 40%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerUp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vw;
+    padding: 1%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:2%;
+    font-size: 1.2vw;
+}
+.typeOfPage{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+.typeOfPage p{
+    font-family: 'Russo One', sans-serif;
+
+}
+.footerLeft{
+    display: flex;
+    color: white;
+    flex-direction: column
+}
+.footerLeft a{
+    margin-bottom: 1%;
+}
+.phoneNumber{
+    margin-bottom: 4%;
+}
+.phoneNumber{
+    text-decoration: none;
+    color: white;
+}
+.footerRight{
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.description{
+    color: white;
+    font-size: 1.8vw;
+    width: 65%;
+}
+.description p{
+    margin-bottom: 5%;
+}
+.personalInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 13%;
+}
+
+.personalInfo img{
+    display: block;
+    width: 20vw;
+    border-radius: 10%;
+}
+.table{
+    margin: 5% 8% 10%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.tableLine{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: solid white 2px;
+    border-radius: 30px;
+}
+.editIcon{
+    margin-right: 2%;
+}
+.tableLine p{
+    margin-left: 2%;
+}
+main{
+    border-bottom: solid white 2px;
+}
+.tableLine p{
+    font-size: 2vw;
+}
+.groupTable{
+    color: white;
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 7%;
+}
+.tableBlock{
+    display: flex;
+    justify-content: space-around;
+}
+.number{
+    width: 10%;
+    border-top-left-radius: 20px;
+}
+.dolzhnost{
+    width: 15%;
+}
+.fio{
+    width: 40%;
+}
+.email{
+    width: 35%;
+    border-top-right-radius: 20px;
+}
+.groupTable tr{
+    font-size: 1.5vw;
+}
+.tableColumnName{
+    width: 25%;
+    text-align: left;
+}
+
+.tableColumnName th{
+    border: solid white 3px;
+    background-color: white;
+    color: black;
+}
+.value td{
+    border: solid white 3px;
+    padding-bottom: 30px;
+}
+
+.lastLeft{
+    border-bottom-left-radius: 20px;
+}
+.lastRight{
+    border-bottom-right-radius: 20px;
+}
+@media (max-width: 500px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
