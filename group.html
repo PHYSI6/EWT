@@ -10,27 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-    <header>
-        <div class="headerUp">
-                <a class="siteTitle" href="index.html">WEB APP UNIVERSITY/GROUP/STUDENT</a>
-            <div class="rightInfo">
-                <a class = "studentName">Борисевич Даниил Дмитриевич</a>
-                <a class="iconProfile" href="index.html"><img src="./images/profileIcon.png"></a>
-            </div>
+<header>
+    <div class="headerUp">
+        <a class="siteTitle" href="index.html">WEB APP UNIVERSITY/GROUP/STUDENT</a>
+        <div class="rightInfo">
+            <a class = "studentName">Борисевич Даниил Дмитриевич</a>
+            <a class="iconProfile" href="index.html"><img src="./images/profileIcon.png"></a>
         </div>
-        <div>
-            <nav class="links">
-                <a href="index.html">Профиль</a>
-                <a href="">Зачётка</a>
-                <a href="">Группа</a>
-                <a href="">Рейтинг</a>
-                <a href="">Объявления</a>
-                <a href="">Расписание</a>
-            </nav>
-        </div>
-    </header>
+    </div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <nav class="nav-links">
+            <a href="index.html">Профиль</a>
+            <a href="">Зачётка</a>
+            <a href="group.html">Группа</a>
+            <a href="">Рейтинг</a>
+            <a href="">Объявления</a>
+            <a href="">Расписание</a>
+        </nav>
+    </div>
+</header>
     <main>
         <div class="typeOfPage">
             <p>Группа</p>

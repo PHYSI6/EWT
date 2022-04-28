@@ -12,7 +12,7 @@ header{
     width: 4vw;
 }
 
-.links a {
+.nav-links a {
     text-decoration: none;
     color: white;
     font-size: 150%;
@@ -21,7 +21,7 @@ header{
     position: relative;
 }
 
-.links a:after {
+.nav-links a:after {
     display: block;
     content: "";
     background-color: #ffffff;
@@ -37,8 +37,8 @@ header{
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-.links a:hover:after,
-.links a:focus:after {
+.nav-links a:hover:after,
+.nav-links a:focus:after {
     width: 100%;
 }
 
@@ -71,14 +71,14 @@ header{
     align-items: center;
     padding: 2%;
 }
-.links{
+.nav-links{
     display: flex;
     justify-content: space-between;
     border-top: solid white 1px;
     border-bottom: solid white 1px;
 }
 
-.links a{
+.nav-links a{
     text-decoration: none;
     color: white;
     font-size: 2.3vw;
@@ -150,6 +150,7 @@ footer{
 }
 
 .tableLine{
+    margin-bottom: 2%;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -161,28 +162,38 @@ footer{
 .editIcon{
     margin-right: 2%;
 }
-.tableLine p{
-    margin-left: 2%;
+.tableLine{
+    display: flex;
+    align-items: center;
 }
 main{
     border-bottom: solid white 2px;
 }
 .tableLine p{
+    margin-left: 2%;
+    align-items: center;
     font-size: 2vw;
 }
 .groupTable{
     color: white;
-    width: 80%;
+    width: 90%;
     border-radius: 8px;
     margin-bottom: 7%;
 }
 .tableBlock{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 .number{
     width: 10%;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 15px;
+}
+.lastLeft{
+    border-bottom-left-radius: 15px;
+}
+.lastRight{
+    border-bottom-right-radius: 15px;
 }
 .dolzhnost{
     width: 15%;
@@ -192,7 +203,7 @@ main{
 }
 .email{
     width: 35%;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 15px;
 }
 .groupTable tr{
     font-size: 1.5vw;
@@ -203,25 +214,13 @@ main{
 }
 
 .tableColumnName th{
-    border: solid white 3px;
-    background-color: white;
-    color: black;
+    border: solid white 2px;
 }
 .value td{
-    border: solid white 3px;
+    border: solid white 2px;
     padding-bottom: 30px;
 }
 
-.lastLeft{
-    border-bottom-left-radius: 20px;
-}
-.lastRight{
-    border-bottom-right-radius: 20px;
-}
-@media (max-width: 500px) {
-    .links{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+input[type="checkbox" i]{
+    display: none;
 }
