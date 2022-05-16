@@ -53,8 +53,22 @@ header{
     padding-top: 10px;
     border-radius: 40px;
     cursor: pointer;
+    webkit-transition: 0.5s ease;
+    transition-duration: 0.5s;
 }
 
+.buttonLogin:hover{
+    box-shadow:
+            1px 1px #c7c2c2,
+            2px 2px #c7c2c2,
+            3px 3px #c7c2c2,
+            4px 4px #c7c2c2,
+            5px 5px #c7c2c2,
+            6px 6px #c7c2c2,
+            7px 7px #c7c2c2;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
 
 .loginForm{
     display: flex;
@@ -209,6 +223,11 @@ footer{
     display: block;
     width: 20vw;
     border-radius: 10%;
+    opacity: 1;
+}
+
+.personalInfo img:hover{
+    opacity: 0.6;
 }
 .table{
     margin: 5% 8% 10%;
